@@ -1,0 +1,163 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>goo314</title> 
+    </head>
+    <body>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded" id="wrapper">
+            <h2 class="text-uppercase" style="margin: 0px;"><i class="bi bi-camera2"></i> Short Information</h2>
+            <!-- Short Information -->
+            <div class="d-flex flex-row align-items-center">
+                <!-- Brief personal Information -->
+                <p class="short-personal fs-4">
+                    Hello, I am Seong Hyeon Goo. I am a student in SKKU and major in Mathematics and Software.
+                    I love to watch Disney movie. I also like to go to cafe. 
+                    My github is <i class="bi bi-github"></i> <a href="https://github.com/goo314">goo314</a>
+                    and email is <i class="bi bi-envelope"></i> rn0731@naver.com. Thank you:)
+                </p>
+                <!-- My Selfie -->
+                <img src="photo.png" alt="this is an image of me" width="300" /> 
+            </div>
+
+            <!-- My name -->
+            <h2 class="text-uppercase">Who am I?</h2>
+            <ul>
+                <li> 제 이름은 구성현 입니다.</li>
+                <li> My name is Seong hyeon Goo. Just call me (my english name) Cona</li>
+                <li> Mi nombre es Cona</li>
+            </ul>
+
+            <h2 class="text-uppercase"><i class="bi bi-calendar-check"></i> My Schedule</h2>
+            <table class="table table-bordered align-middle">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>09:00~12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-success">뮤지컬과 오페라</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00~15:00</td>
+                    <td class="table-success">응용수학</td>
+                    <td class="table-success">논문 스터디</td>
+                    <td></td>
+                    <td class="table-success">위상 멘토링</td>
+                    <td class="table-success">위상수학</td>
+                </tr>
+                <tr>
+                    <td>15:00~18:00</td>
+                    <td class="table-success">컴퓨터네트웍개론</td>
+                    <td class="table-success">NSG 세미나</td>
+                    <td class="table-success">컴퓨터네트웍개론</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:00~21:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-success">오픈소스소프트웨어실습</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h2 class="text-uppercase">My favorite</h2>
+            <div class="d-flex flex-row">
+                <nav class="nav flex-column nav-pills" style="width: 300px;">
+                    <a class="nav-link active" id="v-pills-food-tab">Foods</a>
+                    <a class="nav-link" id="v-pills-movie-tab">Movies</a>
+                    <a class="nav-link" id="v-pills-place-tab">Places</a>
+                </nav>
+
+                <div class="d-flex flex-row" id="favorite">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./statics/chicken.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Chicken</h5>
+                        <p class="card-text" id="like-chicken">0</p>
+                        <button type="button" class="btn btn-outline-info" id="btn-chicken">I like it too <i class="bi bi-hand-thumbs-up-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./statics/닭갈비.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">닭갈비</h5>
+                        <p class="card-text" id="like-dalk">0</p>
+                        <button type="button" class="btn btn-outline-info" id="btn-dalk">I like it too <i class="bi bi-hand-thumbs-up-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./statics/icecream.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Ice cream</h5>
+                        <p class="card-text" id="like-icecream">0</p>
+                        <button type="button" class="btn btn-outline-info" id="btn-icecream">I like it too <i class="bi bi-hand-thumbs-up-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-uppercase">For Information</h2>
+            <div class="for-more-info">
+                <ul>
+                    <li><a href="https://github.com/goo314">Github</a></li>
+                    <li><a href="https://blog.naver.com/rn0731">Naver</a></li>
+                    <li><a href="https://heavenly-taker-556.notion.site/6ad91e1d73404d1b9bcf77338b99025b">Notion</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+
+        
+        <!-- Optional JavaScript; choose one of the two! -->    
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            function likeit(btn, like) {
+                let button = document.querySelector(btn);
+                let likeit = document.querySelector(like);
+                button.addEventListener("click", () => { 
+                likeit.innerText = parseInt(likeit.innerText)+1;
+                });
+            }
+            likeit("#btn-chicken", "#like-chicken")
+            likeit("#btn-dalk", "#like-dalk")
+            likeit("#btn-icecream", "#like-icecream")
+
+            function tobeContinued(id) {
+                let tab = document.querySelector(id);
+                tab.addEventListener("click", () => {
+                    alert("Sorry It is not open yet... to be continued");
+                });
+            }
+
+            tobeContinued("#v-pills-food-tab")
+            tobeContinued("#v-pills-movie-tab")
+            tobeContinued("#v-pills-place-tab")
+            
+        </script>
+    
+    </body>
+</html>
